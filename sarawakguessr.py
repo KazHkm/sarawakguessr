@@ -85,8 +85,7 @@ class App(ctk.CTk):
 
         return earth_r * c
 
-    # Load the photo - retrieves the current photo from the dataset, loads and displays the corresponding image, and
-    # resets all user inputs from the previous round
+    # Loads the current photo, updates the UI elements, and resets the map and input fields for a new guess
     def load_photo(self):
 
         # Reset previous guess
@@ -124,8 +123,7 @@ class App(ctk.CTk):
 
         self.map_widget.set_marker(self.guess_lat, self.guess_lon, text="Your Guess")
 
-    # Submit & process user's location guess
-    # input validation -> retrieve correct answer data -> calculate errors -> scoring system -> feedback display
+    # Processes the player's location and year guesses, calculates the round score, and displays the results
     def submit_guess(self):
 
         if self.guess_lat is None:
@@ -191,7 +189,7 @@ class App(ctk.CTk):
         if self.current_photo < len(PHOTOS) - 1:
             self.next_button.configure(state="normal")
 
-        # Enable restart button after the final photo is submitted
+        # Enable "Start Again" button after the final photo is submitted
         if self.current_photo == len(PHOTOS) - 1:
             self.result_label.configure(
                 text=f"Game Finished!\n\n"
