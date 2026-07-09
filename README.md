@@ -1,6 +1,6 @@
 # SarawakGuessr
 
-![Gameplay](assets/screenshots/gameplay.png)
+![Gameplay](assets/screenshots/gameplay.jpg)
 
 A desktop geography game inspired by **TimeGuessr**, where players identify the locations of historical photographs taken across Sarawak, Malaysia.
 
@@ -27,7 +27,7 @@ Instead of modern Street View images, SarawakGuessr challenges players to explor
 
 ### Result
 
-![Result](assets/screenshots/result.png)
+![Result](assets/screenshots/result.jpg)
 
 ---
 
