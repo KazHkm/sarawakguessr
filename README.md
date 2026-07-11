@@ -20,6 +20,8 @@ Instead of modern Street View images, SarawakGuessr challenges players to explor
 * Multiple rounds featuring a curated collection of historical photographs
 * Desktop interface built with CustomTkinter
 * Zoomable and draggable map
+* Visual connection line between the player's guess and the correct location
+* Map-based distance error visualization
 
 ---
 
