@@ -44,7 +44,7 @@ Instead of modern Street View images, SarawakGuessr challenges players to explor
 ### Clone the repository
 
 ```bash
-git clone https://github.com/KazHkm/SarawakGuessr.git
+git clone https://github.com/KazHkm/sarawakguessr.git
 cd SarawakGuessr
 ```
 
