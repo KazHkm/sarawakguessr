@@ -17,7 +17,7 @@ PHOTOS = [
     {
         "image": "images/Photo_3.jpg",
         "location": (1.5594, 110.3467),
-        "year": 1910,
+        "year": 1902,
         "title": "MAIL STEAMERS’ WHARF AND TRADING VESSELS AT ANCHOR NEAR EMBANKMENT IN KUCHING BAZAAR"
     },
 
