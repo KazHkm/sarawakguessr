@@ -27,9 +27,9 @@ class App(ctk.CTk):
 
         self.title("SarawakGuessr")
         self.geometry(f"{appWidth}x{appHeight}")
-        self.iconbitmap("images/sarawak_icon.ico")
+        self.iconbitmap(IMAGES_DIR / "sarawak_icon.ico")
 
-        image = Image.open("images/transparent_marker.png")
+        image = Image.open(IMAGES_DIR / "transparent_marker.png")
         self.icon_image = ImageTk.PhotoImage(image)
 
         self.left_frame = ctk.CTkFrame(self)
@@ -96,7 +96,7 @@ class App(ctk.CTk):
 
         return earth_r * c
 
-    # Calculate the great-circle distance between two geographic coordinates via Haversine formula
+    # Calculate the coordinates of midpoint between the player's guess and the actual location
     @staticmethod
     def mid_point(lat1, lon1, lat2, lon2):
 
@@ -114,7 +114,7 @@ class App(ctk.CTk):
 
         data = PHOTOS[self.current_photo]
 
-        image = Image.open(data["image"])
+        image = Image.open(IMAGES_DIR / data["image"])
 
         self.photo_image = ctk.CTkImage(light_image=image, dark_image=image, size=(500, 350))
 
